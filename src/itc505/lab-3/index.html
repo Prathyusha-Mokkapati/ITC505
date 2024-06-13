@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+    <title>Custom Font Example</title>
+    <style>
+        body {
+            font-family: 'Nosifer';
+            font-size: 22px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delivering a Custom Font to the Client</h1>
+    <p>This page demonstrates how to deliver a custom font to a client's browser. The font used here is called "Nosifer", which is likely not installed on most computers by default.</p>
+    <h2>How the Custom Font Was Included</h2>
+    <p>To include the "Nosifer" font in this HTML file, the following steps were taken:</p>
+    <ol>
+        <li>A link to the Google Fonts stylesheet was added in the <code>&lt;head&gt;</code> section:
+            <pre><code>&lt;link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'&gt;</code></pre>
+        </li>
+        <li>The CSS <code>font-family</code> property was set to "Nosifer" in the <code>&lt;style&gt;</code> block within the <code>&lt;head&gt;</code> section:
+            <pre><code>body {
+    font-family: 'Nosifer';
+    font-size: 22px;
+}</code></pre>
+        </li>
+        <li>The font was then applied to the entire body of the HTML document, ensuring that all text elements use the "Nosifer" font.</li>
+    </ol>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

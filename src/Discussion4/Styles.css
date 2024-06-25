@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#star {
+    fill: gold;
+    stroke-width: 2;
+    transform-origin: 100px 100px;
+    animation: rotate 5s infinite linear, changeColorStar 5s infinite;
+}
+
+#circle {
+    fill: red;
+    stroke-width: 2;
+    animation: pulsate 3s infinite ease-in-out, changeColorCircle 3s infinite;
+}
+
+#rect {
+    fill: blue;
+    stroke-width: 2;
+    animation: move 4s infinite ease-in-out, changeColorRect 4s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        r: 20;
+    }
+    50% {
+        r: 30;
+    }
+    100% {
+        r: 20;
+    }
+}
+
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes changeColorStar {
+    0%, 100% {
+        fill: gold;
+    }
+    50% {
+        fill: blue;
+    }
+}
+
+@keyframes changeColorCircle {
+    0%, 100% {
+        fill: red;
+    }
+    50% {
+        fill: yellow;
+    }
+}
+
+@keyframes changeColorRect {
+    0%, 100% {
+        fill: blue;
+    }
+    50% {
+        fill: green;
+    }
+}

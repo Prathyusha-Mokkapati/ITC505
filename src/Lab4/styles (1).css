@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+article {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Trade Winds', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    h1 {
+        font-family: 'Trade Winds';
+        margin-bottom: 10px;
+        color: #185a44;
+    }
+    background-color: #c278b7;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-family: 'Playwrite Nigeria Modern';
+    
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    
+}
+
+th {
+    background-color: #490643;
+    color: #fff;
+    font-family: 'Trade Winds';
+} 
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+  padding: 15px 0;
+  background-color: #0eb735;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #ddd;
+}
+
+/* Additional styling for the addendum section */
+h1{
+    color:aqua;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color:rgb(30, 255, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    article {
+        margin: 10px;
+    }
+}

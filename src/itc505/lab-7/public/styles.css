@@ -1,0 +1,56 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #A7AB69;
+    background-image: url("https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg");
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #F5F9F9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #060402;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#madLibResult {
+    margin-top: 20px;
+}
+
+#storySelect {
+    font-family: 'Showcard Gothic', cursive;
+}

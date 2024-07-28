@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ensure footer content does not overlap */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .addendum-link {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="game-title">LIGHTS OUT GAME</h1>
+
+  <div class="container">
+    <div class="board" id="board"></div>
+    <div class="buttons">
+      <button onclick="newGame()">New Game</button>
+    </div>
+  </div>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+  
+  <!-- Footer with Last Modified Date -->
+  <footer>
+    <div class="addendum-link">
+      <a href="addendum.html">Addendum: Game Development Detail Description</a>
+    </div>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+  </footer>
+  <script type="text/javascript">
+       var x = document.lastModified;
+       document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
